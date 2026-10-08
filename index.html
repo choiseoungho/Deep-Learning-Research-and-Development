@@ -226,6 +226,8 @@ a{color:var(--accent)}
 .ext h3{margin:0;font-size:18px;font-weight:600;color:var(--ink)}
 .ext-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;list-style:none;margin:0;padding:0}
 .ext-grid li{display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:1px solid var(--line)}
+.ext-link{margin-top:2px;font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}
+.ext-link:hover{text-decoration:underline;text-underline-offset:4px}
 .ext-kind{font-size:13px;font-weight:600;color:var(--accent)}
 .ext-grid h4{margin:0;font-size:16.5px;font-weight:600;color:var(--ink)}
 .ext-grid p{margin:0;font-size:14.5px;line-height:1.65;color:var(--body)}
@@ -427,7 +429,7 @@ a{color:var(--accent)}
 .btn-deep{min-height:48px;padding:0 22px;font-size:15px;background:var(--deep-accent);color:#0B3F3C}
 .btn-deep:hover{background:#A6EDE3;color:#0B3F3C}
 .learn-cta :focus-visible{outline-color:var(--deep-accent)}
-@media (max-width:1120px) and (min-width:961px){.nav,.nav-list{gap:20px}.nav-list a{font-size:14.5px}}
+@media (max-width:1120px) and (min-width:961px){.nav,.nav-list{gap:16px}.nav-list a{font-size:14px;white-space:nowrap}.brand-sub{display:none}}
 @media (max-width:1000px){.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:900px){.vid-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.subj{grid-template-columns:1fr}}
 @media (max-width:640px){.course-grid{grid-template-columns:1fr}.learn-cta{padding:24px 20px}}
@@ -511,6 +513,7 @@ a{color:var(--accent)}
         <li><a href="#services">서비스</a></li>
         <li><a href="#audit">Technical Audit</a></li>
         <li><a href="#learn">교육 콘텐츠</a></li>
+        <li><a href="patent.html">특허 지원</a></li>
         <li><a href="#research">연구 분야</a></li>
         <li><a href="#about">대표 소개</a></li>
         <li><a href="#process">진행 방식</a></li>
@@ -639,7 +642,7 @@ a{color:var(--accent)}
         <li><span class="ext-kind">프로젝트형</span><h4>PoC 개발 · 기술 PM</h4><p>검증된 방향으로 PoC를 개발하거나, 기술 PM으로 일정과 품질을 관리합니다.</p></li>
         <li><span class="ext-kind">2~6주 패키지</span><h4>AI 모델 성능개선 Sprint</h4><p>데이터 · 학습 · 평가 과정을 점검하고 집중 스프린트로 성능을 개선합니다.</p></li>
         <li><span class="ext-kind">월 정액</span><h4>Model Review Retainer</h4><p>정기 리뷰로 모델 성능과 운영 이슈를 점검하고 개선 방향을 제안합니다.</p></li>
-        <li><span class="ext-kind">프로젝트형</span><h4>IP · 기술사업화 지원</h4><p>연구 성과가 특허 · 기술이전 · 사업화로 이어지도록 기술 관점에서 돕습니다.</p></li>
+        <li><span class="ext-kind">프로젝트형</span><h4>IP · 기술사업화 지원</h4><p>연구 성과가 특허 · 기술이전 · 사업화로 이어지도록 기술 관점에서 돕습니다.</p><a class="ext-link" href="patent.html">딥러닝 특허 작성 · 등록 지원 →</a></li>
       </ul>
     </div>
   </div>
@@ -727,38 +730,42 @@ a{color:var(--accent)}
           <div class="course-foot"><span class="course-price">49,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=ML#apply" data-course="ML">수강 신청</a></span></div>
         </li>
         <li class="course" id="course-AI">
-          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">9강 · 총 10시간 51분</span></div>
-          <h3>인공지능</h3>
-          <p class="course-desc">자율주행 속 AI, 설명가능한 AI(XAI), Diffusion, MLOps, AI 윤리와 인공지능의 미래까지 최신 인공지능 기술을 폭넓게 다룹니다.</p>
-          <ul class="course-topics" aria-label="주요 주제"><li>XAI</li><li>자율주행</li><li>Diffusion</li><li>MLOps</li><li>AI 윤리</li></ul>
-          <details class="course-curri"><summary>커리큘럼 9강 보기</summary><ol><li><span>AI의 윤리적 고려사항</span><span class="len">1:03:32</span></li><li><span>자율주행에서의 AI</span><span class="len">1:26:28</span></li><li><span>인공지능과 미래</span><span class="len">1:17:23</span></li><li><span>설명가능한 AI(XAI) ①</span><span class="len">1:16:01</span></li><li><span>설명가능한 AI(XAI) ②</span><span class="len">55:30</span></li><li><span>Diffusion 모델 ①</span><span class="len">1:04:50</span></li><li><span>Diffusion 모델 ②</span><span class="len">1:24:24</span></li><li><span>설명가능한 AI 심화</span><span class="len">1:16:06</span></li><li><span>MLOps</span><span class="len">1:06:58</span></li></ol></details>
+          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">10강 · 총 11시간 47분</span></div>
+          <h3>인공지능 분야 소개</h3>
+          <p class="course-desc">AI 윤리, 자율주행 속 AI, 인공지능의 미래, 설명가능한 AI(XAI), Diffusion, MLOps까지 인공지능의 주요 분야를 10강으로 폭넓게 소개합니다.</p>
+          <ul class="course-topics" aria-label="주요 주제"><li>AI 윤리</li><li>자율주행</li><li>XAI</li><li>Diffusion</li><li>MLOps</li></ul>
+          <details class="course-curri"><summary>커리큘럼 10강 보기</summary><ol><li><span>AI의 윤리적 고려사항</span><span class="len">1:03:32</span></li><li><span>자율주행에서의 AI</span><span class="len">1:26:28</span></li><li><span>인공지능과 미래</span><span class="len">1:17:23</span></li><li><span>설명가능한 AI(XAI) ①</span><span class="len">1:16:01</span></li><li><span>설명가능한 AI(XAI) ②</span><span class="len">55:30</span></li><li><span>Diffusion 모델 ①</span><span class="len">1:04:50</span></li><li><span>Diffusion 모델 ②</span><span class="len">1:24:24</span></li><li><span>설명가능한 AI 심화</span><span class="len">1:16:06</span></li><li><span>MLOps</span><span class="len">1:06:58</span></li><li><span>설명가능한 AI(XAI) ③</span><span class="len">55:29</span></li></ol></details>
           <div class="course-foot"><span class="course-price">129,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=AI#apply" data-course="AI">수강 신청</a></span></div>
         </li>
         <li class="course" id="course-TREND">
-          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">커리큘럼 신청 시 안내</span></div>
+          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">12강 · 총 5시간 34분</span></div>
           <h3>인문대생을 위한 트렌드 프로그래밍</h3>
-          <p class="course-desc">프로그래밍이 처음인 인문 · 사회 계열 학습자가 최신 기술 트렌드를 따라가며 직접 코드를 작성해 보는 입문 과정입니다.</p>
-          <ul class="course-topics" aria-label="주요 주제"><li>비전공자</li><li>Python</li><li>기술 트렌드</li><li>입문</li></ul>
-          <p class="course-note">강의 구성은 신청해 주시면 이메일로 안내드립니다.</p>
+          <p class="course-desc">프로그래밍이 처음인 인문 · 사회 계열 학습자를 위해 프로그래밍의 기본 구성과 데이터 표현부터 자료형, 조건 · 반복문, 배열, 함수, 재귀, 포인터, 구조체, 파일 입출력까지 12강으로 차근차근 다룹니다.</p>
+          <ul class="course-topics" aria-label="주요 주제"><li>비전공자</li><li>프로그래밍 기초</li><li>자료형 · 제어문</li><li>함수 · 포인터</li></ul>
+          <details class="course-curri"><summary>커리큘럼 12강 보기</summary><ol><li><span>프로그래밍의 기본 구성</span><span class="len">27:51</span></li><li><span>데이터 표현 방식의 이해</span><span class="len">53:36</span></li><li><span>상수와 기본 자료형</span><span class="len">29:08</span></li><li><span>반복문</span><span class="len">29:07</span></li><li><span>조건문</span><span class="len">28:52</span></li><li><span>1차원 배열</span><span class="len">33:16</span></li><li><span>함수</span><span class="len">28:33</span></li><li><span>재귀 함수</span><span class="len">15:24</span></li><li><span>파일 입출력 함수</span><span class="len">10:50</span></li><li><span>포인터의 이해</span><span class="len">25:57</span></li><li><span>배열의 이해와 응용</span><span class="len">25:16</span></li><li><span>구조체의 이해</span><span class="len">26:20</span></li></ol></details>
           <div class="course-foot"><span class="course-price">59,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="course-preview" href="https://www.youtube.com/watch?v=LWFTn860UBU" target="_blank" rel="noopener">무료 미리보기<svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a><a class="btn btn-primary btn-sm" href="training.html?course=TREND#apply" data-course="TREND">수강 신청</a></span></div>
         </li>
         <li class="course" id="course-NLP">
-          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">12강 · 총 12시간 24분</span></div>
+          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">9강 · 총 9시간 40분</span></div>
           <h3>자연어처리 이해</h3>
-          <p class="course-desc">자연어처리의 기초 개념부터 언어 데이터 처리, 모델링, 응용 사례까지 12강으로 차근차근 다룹니다.</p>
-          <ul class="course-topics" aria-label="주요 주제"><li>자연어처리</li><li>텍스트 분석</li><li>언어모델</li><li>응용</li></ul>
-          <details class="course-curri"><summary>커리큘럼 12강 보기</summary><ol><li><span>자연어처리 이해 1주차</span><span class="len">1:01:26</span></li><li><span>자연어처리 이해 2주차</span><span class="len">1:02:09</span></li><li><span>자연어처리 이해 3주차</span><span class="len">1:04:56</span></li><li><span>자연어처리 이해 4주차</span><span class="len">1:05:51</span></li><li><span>자연어처리 이해 5주차</span><span class="len">1:04:54</span></li><li><span>자연어처리 이해 6주차</span><span class="len">1:03:52</span></li><li><span>자연어처리 이해 7주차</span><span class="len">1:03:05</span></li><li><span>자연어처리 이해 8주차</span><span class="len">1:04:40</span></li><li><span>자연어처리 이해 9주차</span><span class="len">1:09:00</span></li><li><span>자연어처리 응용 ①</span><span class="len">38:16</span></li><li><span>자연어처리 응용 ②</span><span class="len">1:07:30</span></li><li><span>자연어처리 응용 ③</span><span class="len">58:42</span></li></ol></details>
-          <div class="course-foot"><span class="course-price">129,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=NLP#apply" data-course="NLP">수강 신청</a></span></div>
+          <p class="course-desc">자연어처리의 기초 개념부터 언어 데이터 처리와 모델링까지 9주 과정으로 차근차근 다룹니다.</p>
+          <ul class="course-topics" aria-label="주요 주제"><li>자연어처리</li><li>텍스트 분석</li><li>언어모델</li></ul>
+          <details class="course-curri"><summary>커리큘럼 9강 보기</summary><ol><li><span>자연어처리 이해 1주차</span><span class="len">1:01:26</span></li><li><span>자연어처리 이해 2주차</span><span class="len">1:02:09</span></li><li><span>자연어처리 이해 3주차</span><span class="len">1:04:56</span></li><li><span>자연어처리 이해 4주차</span><span class="len">1:05:51</span></li><li><span>자연어처리 이해 5주차</span><span class="len">1:04:54</span></li><li><span>자연어처리 이해 6주차</span><span class="len">1:03:52</span></li><li><span>자연어처리 이해 7주차</span><span class="len">1:03:05</span></li><li><span>자연어처리 이해 8주차</span><span class="len">1:04:40</span></li><li><span>자연어처리 이해 9주차</span><span class="len">1:09:00</span></li></ol></details>
+          <div class="course-foot"><span class="course-price">109,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=NLP#apply" data-course="NLP">수강 신청</a></span></div>
         </li>
         <li class="course" id="course-SW">
-          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">14강 · 총 6시간 16분</span></div>
+          <div class="course-top"><span class="course-kind">유료 강좌</span><span class="course-meta">11강 · 총 9시간 23분</span></div>
           <h3>소프트웨어 이해</h3>
-          <p class="course-desc">프로그래밍의 기본 구성과 데이터 표현부터 자료형, 조건 · 반복문, 배열, 함수, 포인터, 구조체, 파일 입출력까지 소프트웨어의 기초를 익히고, 연구용 GPU 서버 사용법도 함께 다룹니다.</p>
-          <ul class="course-topics" aria-label="주요 주제"><li>프로그래밍 기초</li><li>C 언어</li><li>자료구조 기초</li><li>GPU 서버</li></ul>
-          <details class="course-curri"><summary>커리큘럼 14강 보기</summary><ol><li><span>프로그래밍의 기본 구성</span><span class="len">27:51</span></li><li><span>데이터 표현 방식의 이해</span><span class="len">53:36</span></li><li><span>상수와 기본 자료형</span><span class="len">29:08</span></li><li><span>반복문</span><span class="len">29:07</span></li><li><span>조건문</span><span class="len">28:52</span></li><li><span>1차원 배열</span><span class="len">33:16</span></li><li><span>함수</span><span class="len">28:33</span></li><li><span>재귀 함수</span><span class="len">15:24</span></li><li><span>파일 입출력 함수</span><span class="len">10:50</span></li><li><span>포인터의 이해</span><span class="len">25:57</span></li><li><span>배열의 이해와 응용</span><span class="len">25:16</span></li><li><span>구조체의 이해</span><span class="len">26:20</span></li><li><span>부록 · 서버 다루는 방법</span><span class="len">20:23</span></li><li><span>부록 · GPU 서버 사용 방법</span><span class="len">21:28</span></li></ol></details>
-          <div class="course-foot"><span class="course-price">69,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=SW#apply" data-course="SW">수강 신청</a></span></div>
+          <p class="course-desc">소프트웨어와 AI가 실제 문제를 어떻게 푸는지 컴퓨터비전 · 음성 처리 · 센서 데이터 처리 · 자연어처리 응용 사례로 이해하는 과정입니다.</p>
+          <ul class="course-topics" aria-label="주요 주제"><li>컴퓨터비전 응용</li><li>음성 처리</li><li>센서 데이터</li><li>자연어처리 응용</li></ul>
+          <details class="course-curri"><summary>커리큘럼 11강 보기</summary><ol><li><span>컴퓨터비전 응용 ①</span><span class="len">51:50</span></li><li><span>컴퓨터비전 응용 ②</span><span class="len">54:41</span></li><li><span>음성 처리 응용 ①</span><span class="len">26:50</span></li><li><span>음성 처리 응용 ②</span><span class="len">1:35:23</span></li><li><span>음성 처리 응용 ③</span><span class="len">50:35</span></li><li><span>센서 데이터 처리 응용 ①</span><span class="len">29:07</span></li><li><span>센서 데이터 처리 응용 ②</span><span class="len">38:32</span></li><li><span>센서 데이터 처리 응용 ③</span><span class="len">51:49</span></li><li><span>자연어처리 응용 ①</span><span class="len">38:16</span></li><li><span>자연어처리 응용 ②</span><span class="len">1:07:30</span></li><li><span>자연어처리 응용 ③</span><span class="len">58:42</span></li></ol></details>
+          <div class="course-foot"><span class="course-price">119,000원 <small>VAT 포함</small></span><span class="course-actions"><a class="btn btn-primary btn-sm" href="training.html?course=SW#apply" data-course="SW">수강 신청</a></span></div>
         </li>
     </ul>
+    <div class="learn-cta">
+      <div><h3>인공지능 전공 대학생이라면</h3><p>2학년부터 4학년까지 학기별 전공 과목 25개와 지금 볼 수 있는 강좌 · 무료 강의를 커리큘럼으로 정리했습니다.</p></div>
+      <a class="btn btn-deep" href="curriculum.html">AI 전공 커리큘럼 보기</a>
+    </div>
 
     <div class="sub-head">
       <div><h3>무료 공개 강의</h3><p>누구나 바로 볼 수 있는 강의와 실습 영상입니다.</p></div>
@@ -1079,7 +1086,7 @@ a{color:var(--accent)}
         <div class="field"><label for="l-email">이메일<span class="req" aria-hidden="true">*</span></label><input id="l-email" name="email" type="email" autocomplete="email" required></div>
         <div class="hp" aria-hidden="true"><label for="l-website">웹사이트</label><input id="l-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
       </div>
-      <label class="agree"><input type="checkbox" name="agree" required>자료 발송을 위한 개인정보(성함, 소속, 이메일) 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</label>
+      <label class="agree"><input type="checkbox" name="agree" required><span>자료 발송을 위한 개인정보(성함, 소속, 이메일) 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</span></label>
       <button class="btn btn-primary" type="submit" id="lead-btn">소개서 받기</button>
       <p class="form-status" id="lead-status" role="status" aria-live="polite">입력하신 이메일로도 다운로드 링크를 보내 드립니다.</p>
       <div class="res-ready" id="lead-ready" hidden>
@@ -1116,7 +1123,7 @@ a{color:var(--accent)}
         <div class="field full"><label for="f-problem">해결하려는 문제</label><textarea id="f-problem" name="problem" rows="4" placeholder="현재 해결하려는 비즈니스 또는 연구 문제를 적어 주세요." aria-describedby="f-problem-note"></textarea><p class="field-note" id="f-problem-note">환자 식별정보, 원본 EMR, 비공개 소스코드 같은 민감정보는 적지 말아 주세요. 필요한 자료는 NDA 후 따로 받습니다.</p></div>
         <div class="hp" aria-hidden="true"><label for="f-website">웹사이트</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
       </div>
-      <label class="agree"><input type="checkbox" name="agree" required>상담을 위한 개인정보(성함, 소속, 이메일, 연락처) 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</label>
+      <label class="agree"><input type="checkbox" name="agree" required><span>상담을 위한 개인정보(성함, 소속, 이메일, 연락처) 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</span></label>
       <button class="btn btn-primary" type="submit" id="submit-btn">상담 신청하기</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite">버튼을 누르면 바로 접수되고, 확인 후 이메일로 회신드립니다.</p>
       <div class="fallback" id="form-fallback" hidden>
@@ -1140,6 +1147,8 @@ a{color:var(--accent)}
     <div class="f-meta">
       <nav aria-label="바로가기">
         <a href="training.html">유료 강의 · 기업 교육</a>
+        <a href="curriculum.html">AI 전공 커리큘럼</a>
+        <a href="patent.html">딥러닝 특허 지원</a>
         <a href="support.html">수강 지원 · FAQ</a>
         <a href="#resources">회사 소개서</a>
         <a href="privacy.html">개인정보처리방침</a>

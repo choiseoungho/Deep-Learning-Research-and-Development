@@ -167,6 +167,8 @@ a{color:var(--accent)}
 .ext h3{margin:0;font-size:18px;font-weight:600;color:var(--ink)}
 .ext-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;list-style:none;margin:0;padding:0}
 .ext-grid li{display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:1px solid var(--line)}
+.ext-link{margin-top:2px;font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}
+.ext-link:hover{text-decoration:underline;text-underline-offset:4px}
 .ext-kind{font-size:13px;font-weight:600;color:var(--accent)}
 .ext-grid h4{margin:0;font-size:16.5px;font-weight:600;color:var(--ink)}
 .ext-grid p{margin:0;font-size:14.5px;line-height:1.65;color:var(--body)}
@@ -368,7 +370,7 @@ a{color:var(--accent)}
 .btn-deep{min-height:48px;padding:0 22px;font-size:15px;background:var(--deep-accent);color:#0B3F3C}
 .btn-deep:hover{background:#A6EDE3;color:#0B3F3C}
 .learn-cta :focus-visible{outline-color:var(--deep-accent)}
-@media (max-width:1120px) and (min-width:961px){.nav,.nav-list{gap:20px}.nav-list a{font-size:14.5px}}
+@media (max-width:1120px) and (min-width:961px){.nav,.nav-list{gap:16px}.nav-list a{font-size:14px;white-space:nowrap}.brand-sub{display:none}}
 @media (max-width:1000px){.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:900px){.vid-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.subj{grid-template-columns:1fr}}
 @media (max-width:640px){.course-grid{grid-template-columns:1fr}.learn-cta{padding:24px 20px}}
@@ -522,6 +524,7 @@ a{color:var(--accent)}
       <ul class="nav-list" id="nav-list">
         <li><a href="index.html">홈</a></li>
         <li><a href="training.html#courses">유료 강좌</a></li>
+        <li><a href="curriculum.html">AI 전공 커리큘럼</a></li>
         <li><a href="support.html#services">수강 서비스</a></li>
         <li><a href="support.html#refund">결제 · 환불</a></li>
         <li><a href="support.html#faq">FAQ</a></li>
@@ -664,7 +667,7 @@ a{color:var(--accent)}
         <div class="field full"><label for="s-msg">요청 내용</label><textarea id="s-msg" name="problem" rows="4"></textarea></div>
         <div class="hp" aria-hidden="true"><label for="s-website">웹사이트</label><input id="s-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
       </div>
-      <label class="agree"><input type="checkbox" name="agree" required>요청 처리를 위한 개인정보 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</label>
+      <label class="agree"><input type="checkbox" name="agree" required><span>요청 처리를 위한 개인정보 수집 · 이용에 동의합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.</span></label>
       <button class="btn btn-primary" type="submit" id="support-btn">요청 보내기</button>
       <p class="form-status" id="support-status" role="status" aria-live="polite">접수되면 확인 메일을 보내 드립니다.</p>
     </form>
@@ -683,6 +686,8 @@ a{color:var(--accent)}
       <nav aria-label="바로가기">
         <a href="index.html">홈</a>
         <a href="training.html">유료 강의 · 기업 교육</a>
+        <a href="curriculum.html">AI 전공 커리큘럼</a>
+        <a href="patent.html">딥러닝 특허 지원</a>
         <a href="support.html">수강 지원 · FAQ</a>
         <a href="support.html#refund">결제 · 환불 규정</a>
         <a href="privacy.html">개인정보처리방침</a>
