@@ -786,11 +786,11 @@ a{color:var(--accent)}
     lines.push('', '요청 사항:', v('problem') || '-');
 
     function done(msg) {
-      status.setAttribute('data-state', 'ok');
-      status.textContent = msg;
-      fb.hidden = true;
       form.reset();
       setMode(m);
+      fb.hidden = true;
+      status.setAttribute('data-state', 'ok');
+      status.textContent = msg;
     }
     function fail() {
       fbText.value = '받는 사람: ' + TO + '\n제목: [' + kind + '] ' + v('fname') + '\n\n' + lines.join('\n');
