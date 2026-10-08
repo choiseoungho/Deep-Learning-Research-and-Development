@@ -327,6 +327,8 @@ a{color:var(--accent)}
 .course-meta{font-size:13px;color:var(--muted);text-align:right}
 .course h3{margin:0;font-size:20px;line-height:1.45;font-weight:600;color:var(--ink)}
 .course-desc{margin:0;font-size:15px;line-height:1.7;color:var(--body)}
+.course-mats{margin:0;display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:10px;background:var(--accent-soft-2);font-size:13.5px;line-height:1.55;color:var(--body)}
+.course-mats b{font-size:12.5px;font-weight:600;color:var(--accent)}
 .course-topics{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
 .course-topics li{font-size:12.5px;color:var(--body);border:1px solid var(--chip-line);padding:3px 10px;border-radius:999px}
 .course-curri summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);padding:6px 0}
@@ -567,7 +569,7 @@ a{color:var(--accent)}
       <p class="sec-lead">일반적인 온라인 교육 서비스에서 기대하는 지원을 똑같이 제공합니다. 필요한 항목은 아래 서비스 요청으로 신청하세요.</p>
     </div>
     <ul class="svc-cards">
-        <li class="svc-card"><span class="ico" aria-hidden="true"><svg focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.5v13l11-6.5z"/></svg></span><h3>무료 미리보기</h3><p>무료 공개 강의 30편과 강좌 미리보기로 강의 방식과 난이도를 먼저 확인할 수 있습니다.</p><a href="index.html#learn">무료 강의 보기 →</a></li>
+        <li class="svc-card"><span class="ico" aria-hidden="true"><svg focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.5v13l11-6.5z"/></svg></span><h3>무료 미리보기</h3><p>무료 공개 강의 31편과 강좌 미리보기로 강의 방식과 난이도를 먼저 확인할 수 있습니다.</p><a href="index.html#learn">무료 강의 보기 →</a></li>
         <li class="svc-card"><span class="ico" aria-hidden="true"><svg focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>1년 수강 보장</h3><p>강의 링크를 받은 날부터 1년간 횟수 제한 없이 반복해서 시청할 수 있습니다.</p><a href="#faq">수강 기간 안내 →</a></li>
         <li class="svc-card"><span class="ico" aria-hidden="true"><svg focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.4-5.1A8.5 8.5 0 1 1 21 12z"/></svg></span><h3>질의응답 지원</h3><p>강의 내용 질문을 이메일로 받아 확인 후 답변드립니다.</p><a href="#request">질문하기 →</a></li>
         <li class="svc-card"><span class="ico" aria-hidden="true"><svg focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><h3>강의 링크 재발송</h3><p>메일을 잃어버려도 신청 번호와 이메일만 있으면 바로 다시 받을 수 있습니다.</p><a href="#request">재발송 요청 →</a></li>
@@ -624,11 +626,11 @@ a{color:var(--accent)}
   <div class="wrap stack">
     <h2 class="h2" id="h-faq">자주 묻는 질문</h2>
     <div class="faq">
-      <details><summary>강의는 어떻게 보나요?</summary><p>입금이 확인되면 신청하신 이메일로 강좌의 강의 영상 링크 목록을 보내 드립니다. 링크를 누르면 YouTube에서 바로 재생되며 PC · 태블릿 · 휴대폰 어디서나 볼 수 있습니다. 별도 회원가입이나 앱 설치는 필요 없습니다.</p></details>
-      <details><summary>신청하면 무엇을 받나요?</summary><p>신청 직후 신청 번호와 입금 계좌가 담긴 입금 안내 메일을 받습니다. 입금이 확인되면 강의 링크 메일을 받습니다.</p></details>
+      <details><summary>강의는 어떻게 보나요?</summary><p>입금이 확인되면 신청하신 이메일로 강좌의 강의 영상 · 자료 링크 목록을 보내 드립니다. 링크를 누르면 YouTube 또는 Google Drive에서 바로 재생되며 PC · 태블릿 · 휴대폰 어디서나 볼 수 있습니다. 별도 회원가입이나 앱 설치는 필요 없습니다.</p></details>
+      <details><summary>신청하면 무엇을 받나요?</summary><p>신청 직후 신청 번호와 입금 계좌가 담긴 입금 안내 메일을 받습니다. 입금이 확인되면 강의 링크 메일을 받습니다. 생성형 인공지능 · 자연어처리 · 바이오 인공지능 강좌는 주차별 강의자료(PDF), 100문제, 실습 문제와 정답이 담긴 자료 폴더 링크도 함께 받습니다.</p></details>
       <details><summary>메일이 오지 않았어요.</summary><p>먼저 스팸함 · 프로모션함을 확인해 주세요. 그래도 없다면 아래 서비스 요청에서 &#x27;강의 링크 재발송&#x27;을 선택하고 신청 번호와 신청 이메일을 적어 주세요. 결제가 확인된 신청이면 바로 다시 보내 드립니다.</p></details>
       <details><summary>수강 기간이 있나요?</summary><p>강의 링크를 받은 날부터 1년 동안 시청을 보장합니다. 기간 안에는 횟수 제한 없이 반복해서 볼 수 있습니다.</p></details>
-      <details><summary>수강 전에 강의를 미리 볼 수 있나요?</summary><p>홈페이지의 무료 공개 강의 30편과 강좌 미리보기 영상으로 강의 방식과 난이도를 먼저 확인할 수 있습니다. 각 강좌 카드의 &#x27;커리큘럼 보기&#x27;에서 강의 목록과 길이도 확인해 주세요.</p></details>
+      <details><summary>수강 전에 강의를 미리 볼 수 있나요?</summary><p>홈페이지의 무료 공개 강의 31편과 강좌 미리보기 영상으로 강의 방식과 난이도를 먼저 확인할 수 있습니다. 각 강좌 카드의 &#x27;커리큘럼 보기&#x27;에서 강의 목록과 길이도 확인해 주세요.</p></details>
       <details><summary>강의 내용을 질문할 수 있나요?</summary><p>네. 서비스 요청에서 &#x27;강의 내용 질문&#x27;을 선택하거나 강의 링크 메일에 회신해 주세요. 확인 후 이메일로 답변드립니다.</p></details>
       <details><summary>영수증이나 세금계산서를 받을 수 있나요?</summary><p>개인은 현금영수증, 사업자 · 기관은 세금계산서를 발급해 드립니다. 서비스 요청에서 해당 항목을 선택하고 필요한 정보를 적어 주세요.</p></details>
       <details><summary>수강 확인서를 받을 수 있나요?</summary><p>교육비 증빙이나 내부 보고용으로 수강 확인서(PDF)를 발급해 드립니다. 서비스 요청에서 &#x27;수강 확인서 발급&#x27;을 선택해 주세요.</p></details>
