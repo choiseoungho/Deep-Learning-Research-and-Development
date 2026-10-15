@@ -492,7 +492,7 @@ a{color:var(--accent)}
         <li><a href="index.html">홈</a></li>
         <li><a href="#courses">유료 강좌</a></li>
         <li><a href="#corporate">기업 · 기관 교육</a></li>
-        <li><a href="#subjects">교육 과목</a></li>
+        <li><a href="programs.html">의료계열 프로그램</a></li>
         <li><a href="curriculum.html">AI 전공 커리큘럼</a></li>
         <li><a href="support.html">수강 지원</a></li>
       </ul>
@@ -667,7 +667,7 @@ a{color:var(--accent)}
       <h3 id="h-apply-form">신청서</h3>
       <fieldset class="mode">
         <legend>신청 구분</legend>
-        <label><input type="radio" name="mode" value="enroll" checked> 유료 강좌 수강 신청</label>
+        <label><input type="radio" name="mode" value="enroll" checked> 유료 강좌 · 프로그램 신청</label>
         <label><input type="radio" name="mode" value="corp"> 기업 · 기관 교육 문의</label>
       </fieldset>
       <div class="fields">
@@ -676,7 +676,7 @@ a{color:var(--accent)}
         <div class="field"><label for="a-email">이메일<span class="req" aria-hidden="true">*</span></label><input id="a-email" name="email" type="email" autocomplete="email" required></div>
         <div class="field"><label for="a-tel">연락처</label><input id="a-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
         <div class="group" data-group="enroll">
-          <div class="field full"><label for="a-course">강좌<span class="req" aria-hidden="true">*</span></label><select id="a-course" name="course"><option value="GENAI">생성형 인공지능 · 149,000원</option><option value="NLP16">자연어처리 · 149,000원</option><option value="BIO">바이오 인공지능 · 119,000원</option><option value="NLP">자연어처리 이해 · 109,000원</option><option value="ML">기계학습 · 49,000원</option><option value="AI">인공지능 분야 소개 · 129,000원</option><option value="TREND">인문대생을 위한 트렌드 프로그래밍 · 59,000원</option><option value="SW">소프트웨어 이해 · 119,000원</option></select></div>
+          <div class="field full"><label for="a-course">강좌 · 프로그램<span class="req" aria-hidden="true">*</span></label><select id="a-course" name="course"><optgroup label="동영상 강좌"><option value="GENAI">생성형 인공지능 · 149,000원</option><option value="NLP16">자연어처리 · 149,000원</option><option value="BIO">바이오 인공지능 · 119,000원</option><option value="NLP">자연어처리 이해 · 109,000원</option><option value="ML">기계학습 · 49,000원</option><option value="AI">인공지능 분야 소개 · 129,000원</option><option value="TREND">인문대생을 위한 트렌드 프로그래밍 · 59,000원</option><option value="SW">소프트웨어 이해 · 119,000원</option></optgroup><optgroup label="의료계열 교육 프로그램"><option value="KMEDQ">한의대생 국시 대비 교육 프로그램 · 59,000원</option><option value="MEDQ">의대생 국시 대비 교육 프로그램 · 79,000원</option><option value="NURSEQ">간호학 국시 대비 교육 프로그램 · 49,000원</option><option value="VETQ">수의대생 국시 대비 교육 프로그램 · 59,000원</option></optgroup></select></div>
           <div class="field full"><label for="a-dep">입금자명</label><input id="a-dep" name="depositor" type="text" placeholder="신청자 이름과 다를 때만 적어 주세요"></div>
         </div>
         <div class="group" data-group="corp" hidden>
@@ -718,6 +718,7 @@ a{color:var(--accent)}
         <a href="index.html#learn">무료 강의</a>
         <a href="curriculum.html">AI 전공 커리큘럼</a>
         <a href="patent.html">딥러닝 특허 지원</a>
+        <a href="programs.html">의료계열 교육 프로그램</a>
         <a href="support.html">수강 지원 · FAQ</a>
         <a href="support.html#refund">결제 · 환불 규정</a>
         <a href="privacy.html">개인정보처리방침</a>
